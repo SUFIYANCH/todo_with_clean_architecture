@@ -4,5 +4,5 @@ abstract class TodoRepository {
   Future<void> addtodo(TodoEntity todo);
   Future<void> updateTodo(TodoEntity todo);
   Future<void> deleteTodo(String id);
-  Stream<TodoEntity> getTodo();
+  Stream<List<TodoEntity>> getTodo();
 }

@@ -7,15 +7,17 @@ final class GetTodoUsecase {
   final TodoRepository repository;
   GetTodoUsecase({required this.repository});
 
-  Stream<TodoEntity> call() async* {
+  Stream<List<TodoEntity>> call() async* {
     try {
       final todoStream = repository.getTodo();
-      await for (final todo in todoStream) {
-        if (todo.title.trim().isEmpty) {
-          throw InvalidTitleException();
-        } else {
-          yield todo;
+      await for (final todos in todoStream) {
+        for (final todo in todos) {
+          if (todo.title.trim().isEmpty) {
+            throw InvalidTitleException();
+          }
         }
+
+        yield todos;
       }
     } catch (e) {
       throw CannotGetTodoException();

@@ -1,7 +1,7 @@
 {
   "file_generated_by": "FlutterFire CLI",
   "purpose": "FirebaseAppID & ProjectID for this Firebase app in this directory",
-  "GOOGLE_APP_ID": "1:878937168452:ios:4ec015b8d5d5867be0ba11",
-  "FIREBASE_PROJECT_ID": "cleanarchtodo",
-  "GCM_SENDER_ID": "878937168452"
+  "GOOGLE_APP_ID": "1:407821099676:ios:46a423e8fd69c13022c359",
+  "FIREBASE_PROJECT_ID": "todocleanarch",
+  "GCM_SENDER_ID": "407821099676"
 }

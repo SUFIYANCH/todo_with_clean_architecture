@@ -5,5 +5,5 @@ abstract class FirestoreDatasource {
   Future<void> addtodo(TodoModel todo);
   Future<void> updateTodo(TodoModel todo, String id);
   Future<void> deleteTodo(String id);
-  Stream<DocumentSnapshot<TodoModel>> getTodo();
+  Stream<QuerySnapshot<TodoModel>> getTodo();
 }

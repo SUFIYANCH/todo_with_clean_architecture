@@ -44,38 +44,38 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAasMcYUpdKEFBEH6mnC5zPZuPWTThv0qE',
-    appId: '1:878937168452:web:d33acaf347961cc0e0ba11',
-    messagingSenderId: '878937168452',
-    projectId: 'cleanarchtodo',
-    authDomain: 'cleanarchtodo.firebaseapp.com',
-    storageBucket: 'cleanarchtodo.appspot.com',
-    measurementId: 'G-64SCTL7WTD',
+    apiKey: 'AIzaSyDIDtVj76e83p-PQ0r7yyBupAfHCjnt7IY',
+    appId: '1:407821099676:web:d01e1cd5e561bbff22c359',
+    messagingSenderId: '407821099676',
+    projectId: 'todocleanarch',
+    authDomain: 'todocleanarch.firebaseapp.com',
+    storageBucket: 'todocleanarch.appspot.com',
+    measurementId: 'G-KBXDB8PTRQ',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCQUJbhpBTnmlQnIgzfhff5ABMVt7OWm1Q',
-    appId: '1:878937168452:android:3634050db4e32588e0ba11',
-    messagingSenderId: '878937168452',
-    projectId: 'cleanarchtodo',
-    storageBucket: 'cleanarchtodo.appspot.com',
+    apiKey: 'AIzaSyDObgNdzNXJHlEBIPzPwrFeer-Z50-ibQM',
+    appId: '1:407821099676:android:c896219b65e8adec22c359',
+    messagingSenderId: '407821099676',
+    projectId: 'todocleanarch',
+    storageBucket: 'todocleanarch.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDtbtHvZg36cI4cd69esavJTRAACRO_zFo',
-    appId: '1:878937168452:ios:fd587193035e2e2ee0ba11',
-    messagingSenderId: '878937168452',
-    projectId: 'cleanarchtodo',
-    storageBucket: 'cleanarchtodo.appspot.com',
+    apiKey: 'AIzaSyDKF2ou5Cr5K_nzZ7cI0QW8nBPov4RlmDg',
+    appId: '1:407821099676:ios:158d3d0aab76d6df22c359',
+    messagingSenderId: '407821099676',
+    projectId: 'todocleanarch',
+    storageBucket: 'todocleanarch.appspot.com',
     iosBundleId: 'com.example.todoWithCleanArchitecture',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDtbtHvZg36cI4cd69esavJTRAACRO_zFo',
-    appId: '1:878937168452:ios:4ec015b8d5d5867be0ba11',
-    messagingSenderId: '878937168452',
-    projectId: 'cleanarchtodo',
-    storageBucket: 'cleanarchtodo.appspot.com',
+    apiKey: 'AIzaSyDKF2ou5Cr5K_nzZ7cI0QW8nBPov4RlmDg',
+    appId: '1:407821099676:ios:46a423e8fd69c13022c359',
+    messagingSenderId: '407821099676',
+    projectId: 'todocleanarch',
+    storageBucket: 'todocleanarch.appspot.com',
     iosBundleId: 'com.example.todoWithCleanArchitecture.RunnerTests',
   );
 }

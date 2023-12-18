@@ -23,14 +23,17 @@ class TodoRepositoryImpl implements TodoRepository {
   }
 
   @override
-  Stream<TodoEntity> getTodo() async* {
+  Stream<List<TodoEntity>> getTodo() async* {
     final dataStream = dataSource.getTodo();
     await for (final snapshot in dataStream) {
-      final model = snapshot.data();
-      if (model != null) {
-        yield TodoEntity(
-            id: snapshot.id, title: model.title, isChecked: model.isChecked);
-      }
+      final modelsList = snapshot.docs;
+      yield [
+        for (final model in modelsList)
+          TodoEntity(
+              id: model.id,
+              title: model.data().title,
+              isChecked: model.data().isChecked)
+      ];
     }
   }
 
