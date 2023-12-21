@@ -29,8 +29,8 @@ final class FirestoreDatasourceImpl implements FirestoreDatasource {
   }
 
   @override
-  Stream<DocumentSnapshot<TodoModel>> getTodo() {
-    return collection.doc().snapshots();
+  Stream<QuerySnapshot<TodoModel>> getTodo() {
+    return collection.snapshots();
   }
 }
 

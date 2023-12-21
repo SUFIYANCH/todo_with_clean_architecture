@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:todo_with_clean_architecture/core/themes/app_theme.dart';
+import 'package:todo_with_clean_architecture/core/utils/error_snackbar_util.dart';
 import 'package:todo_with_clean_architecture/features/home/domain/entities/todo_entity.dart';
-import 'package:todo_with_clean_architecture/features/home/presentation/providers/todo_provider.dart';
+import 'package:todo_with_clean_architecture/features/home/presentation/providers/todo_state_provider.dart';
 
 class BottomsheetWidget extends ConsumerWidget {
   final TodoEntity? todo;
@@ -21,7 +22,20 @@ class BottomsheetWidget extends ConsumerWidget {
       Navigator.pop(context);
     }
 
-    void createOrUpdateTodo() {}
+    Future<String?> createOrUpdateTodo() async {
+      Navigator.pop(context);
+      if (todo != null) {
+        return ref
+            .read(todoStateProvider.notifier)
+            .updateTodo(id: todo!.id, isChecked: todo!.isChecked);
+      } else {
+        return await ref.read(todoStateProvider.notifier).addTodo();
+      }
+    }
+
+    if (todo != null) {
+      ref.watch(todoStateProvider.notifier).titleController.text = todo!.title;
+    }
 
     return Material(
       child: Padding(
@@ -66,7 +80,8 @@ class BottomsheetWidget extends ConsumerWidget {
                             borderRadius:
                                 BorderRadius.circular(space.space_300)),
                         backgroundColor: colors.primary),
-                    onPressed: createOrUpdateTodo,
+                    onPressed: () => createOrUpdateTodo().then(
+                        (error) => ErrorSnackbarUtil.showError(context, error)),
                     child: Text(
                       todo != null ? 'Update' : 'Create',
                     ),

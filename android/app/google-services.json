@@ -1,13 +1,32 @@
 {
   "project_info": {
-    "project_number": "878937168452",
-    "project_id": "cleanarchtodo",
-    "storage_bucket": "cleanarchtodo.appspot.com"
+    "project_number": "407821099676",
+    "project_id": "todocleanarch",
+    "storage_bucket": "todocleanarch.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:878937168452:android:3634050db4e32588e0ba11",
+        "mobilesdk_app_id": "1:407821099676:android:1efff6e93569f99922c359",
+        "android_client_info": {
+          "package_name": "com.example.todo_clean_arch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDObgNdzNXJHlEBIPzPwrFeer-Z50-ibQM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:407821099676:android:c896219b65e8adec22c359",
         "android_client_info": {
           "package_name": "com.example.todo_with_clean_architecture"
         }
@@ -15,7 +34,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCQUJbhpBTnmlQnIgzfhff5ABMVt7OWm1Q"
+          "current_key": "AIzaSyDObgNdzNXJHlEBIPzPwrFeer-Z50-ibQM"
         }
       ],
       "services": {
